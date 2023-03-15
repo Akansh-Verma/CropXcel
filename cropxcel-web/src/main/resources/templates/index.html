@@ -10,13 +10,14 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/general.css">
 
     <title>CropXcel</title>
 </head>
 
 <body>
     <header th:insert="~{fragments/general :: header}"> </header>
-    <div class="hero">
+    <!-- <div class="hero">
 
         <h1><span>I'm a cool Navigation</span></h1>
 
@@ -24,7 +25,11 @@
             <span></span>
         </div>
 
-    </div>
+    </div> -->
+    <section>
+        <h1 class="title">Scroll and Reveal</h1>
+        <h2 class="fade-in show-once">Simple Animation that makes your website dynamic!</h2>
+      </section>
 
     <div class="row content">
         <h1 class="sec01">Section 01</h1>
@@ -94,7 +99,10 @@
     </div>
     <footer th:insert="~{fragments/general :: footer}"></footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="/js/general.js"></script>
+    <script type="text/javascript" src="/js/myscript.js"></script>
+
 </body>
 
 </html>
