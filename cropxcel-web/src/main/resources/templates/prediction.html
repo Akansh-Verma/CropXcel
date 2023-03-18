@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/general.css">
+
+    <title>CropXcel</title>
+</head>
+
+<body>
+    <header th:insert="~{fragments/general :: header}"> </header>
+    <h2>Tomato Disease Classification</h2>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <footer th:insert="~{fragments/general :: footer}"></footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="/js/general.js"></script>
+    <script type="text/javascript" src="/js/myscript.js"></script>
+
+</body>
+
+</html>
