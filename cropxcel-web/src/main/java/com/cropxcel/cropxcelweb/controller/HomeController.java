@@ -12,4 +12,8 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping("/prediction")
+    public String showPredictionPage() {
+        return "prediction"; // return the name of the prediction page's HTML file
+    }
 }
